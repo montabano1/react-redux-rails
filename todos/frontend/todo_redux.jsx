@@ -2,7 +2,7 @@ import { configureStore } from "./store/store";
 import React from "react";
 import ReactDOM from "react-dom";
 import { receiveTodos, receiveTodo } from "./actions/todo_actions";
-import App from './components/app';
+import Root from './components/root';
 
 // class TodoRedux extends React.Component {
 //   render() {
@@ -18,7 +18,7 @@ import App from './components/app';
 //
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("content");
-  ReactDOM.render(<App />, root);
+  ReactDOM.render(<Root />, root);
 });
 
 const store = configureStore();
